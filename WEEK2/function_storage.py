@@ -1,4 +1,5 @@
 import random
+from Card_class import *
 
 #Fisher-Yates Algorithm
 def shuffle(ary):
@@ -16,11 +17,6 @@ def print_CardArray(array):
     for i in range(len(array)):
         print(array[i].value,"-",array[i].suit)
 
-# The function for creating Card array
-def create_CardArray(value_array,suit_array,card_array):
-    for i,value in enumerate(value_array):
-        for j,suit in enumerate(suit_array):
-                card_array[i*4+j] = Card(value,suit)
 
 def convert_to_int(array):
     for i in range(len(array)):

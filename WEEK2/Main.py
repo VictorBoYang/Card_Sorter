@@ -1,6 +1,4 @@
 # Python Program to shuffle a given array
-import random
-from Card_class import *
 from function_storage import *
 
 # The function for creating Card array
@@ -28,7 +26,7 @@ convert_to_int(card_array)
 print("sorting starts")
 bubble_sorting(card_array)
 print("sorting finsihed")
-print_CardArray(card_array)
+##print_CardArray(card_array)
 
 #convert INT TYPE BACK TO JQKA,HDCS
 convert_to_str(card_array)
