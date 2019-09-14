@@ -17,18 +17,19 @@ create_CardArray(Value,Suit,card_array)
 print("shffling")
 shuffle(card_array)
 print("shuffle finished")
-print_CardArray(card_array)
+#print_CardArray(card_array)
 
 #convert JQKA,HDCS TO INT TYPE,EASY TO OPERATE
+#convert_to_int(card_array)
 convert_to_int(card_array)
-
 #sorting
 print("sorting starts")
 bubble_sorting(card_array)
 print("sorting finsihed")
-##print_CardArray(card_array)
+print_CardArray(card_array)
 
 #convert INT TYPE BACK TO JQKA,HDCS
+# convert_to_str(card_array)
 convert_to_str(card_array)
 
 #final result
