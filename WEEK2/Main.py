@@ -1,6 +1,6 @@
 # Python Program to shuffle a given array
 from function_storage import *
-
+from sorting_storage import *
 # The function for creating Card array
 def create_CardArray(value_array,suit_array,card_array):
     for i,value in enumerate(value_array):
@@ -17,19 +17,19 @@ create_CardArray(Value,Suit,card_array)
 print("shffling")
 shuffle(card_array)
 print("shuffle finished")
-#print_CardArray(card_array)
-
-#convert JQKA,HDCS TO INT TYPE,EASY TO OPERATE
-#convert_to_int(card_array)
-convert_to_int(card_array)
-#sorting
-print("sorting starts")
-bubble_sorting(card_array)
-print("sorting finsihed")
 print_CardArray(card_array)
 
+#convert JQKA,HDCS TO INT TYPE,EASY TO OPERATE
+convert_to_int(card_array)
+
+#sorting
+print("sorting starts")
+#bubble_sorting(card_array)
+recursive_bubble_sorting(card_array,len(card_array))
+print("sorting finsihed")
+#print_CardArray(card_array)
+
 #convert INT TYPE BACK TO JQKA,HDCS
-# convert_to_str(card_array)
 convert_to_str(card_array)
 
 #final result
