@@ -14,6 +14,17 @@ def bubble_sorting(array):
                     array[j] = array[j+1]
                     array[j+1] = temp
 
+#recursive bubble sorting by value
+def recursive_bubble_sorting_value(array,len):
+    if len == 0:
+        return
+    for j in range(len - 1):
+        if array[j].value > array[j+1].value:#This if will sort by Card.value
+            temp = array[j]
+            array[j] = array[j+1]
+            array[j+1] = temp
+    recursive_bubble_sorting_value(array,len-1)
+
 # recursive bubble sorting
 def recursive_bubble_sorting(array,len):
     if len == 0:

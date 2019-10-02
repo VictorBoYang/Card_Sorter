@@ -21,9 +21,15 @@ print_CardArray(card_array)
 
 #convert JQKA,HDCS TO INT TYPE,EASY TO OPERATE
 convert_to_int(card_array)
-
+print("sorting by value starts:")
+recursive_bubble_sorting_value(card_array,len(card_array))
+convert_to_str(card_array)
+print_CardArray(card_array)
+print("sorting by value finished")
 #sorting
+
 print("sorting starts")
+convert_to_int(card_array)
 #bubble_sorting(card_array)
 recursive_bubble_sorting(card_array,len(card_array))
 print("sorting finsihed")
